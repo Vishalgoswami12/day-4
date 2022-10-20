@@ -1,0 +1,91 @@
+.hero{
+    padding: 0;
+  }
+  .hero-bannar {
+    padding: 5.5rem 0;
+    background: $primary;
+    color: $white;
+    font-family: $titillium;
+    .heading {
+      font-size :5rem;
+    }
+    .sub-heading {
+      font-family: $sanspro;
+      font-weight: 400;
+    }
+  }
+  
+  .content-container{
+    width: 100%;
+    padding: 2% 11%;
+    min-height: 100vh;
+    .articles-container{
+      flex:  0 1 75%;
+      height: 100%;
+      
+    }
+    .sidebar-container{
+      flex :0 1 20%;
+      height: 100%;
+    
+    }
+  
+    .active-feed{
+      border-bottom: .4rem solid $primary;
+      color: $primary;
+      font-weight: 600;
+    }
+    .user-feed-container{
+      border-bottom: .1rem solid #ddd;
+      margin-bottom: 2rem ;
+      li{
+        display: inline-block;
+        margin-right:  2.4rem  ;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  
+  .pagination-container {
+    margin: 2rem 0;
+    span {
+      display: inline-block;
+      @extend .center;
+      padding: 0.8rem 1.2rem;
+      border: 0.1rem solid $primary;
+      cursor: pointer;
+    }
+  }
+  
+  .active-page{
+    background: $primary;
+    color: #fff;
+  }
+  
+  // made responsive this page
+  @media screen and (max-width: 992px) {
+    .content-container {
+      padding: 2rem;
+      flex-direction: column;
+      .articles-container {
+        flex: 1 1 100%;
+      }
+      .sidebar-container {
+        flex: 1 1 100%;
+      }
+    }
+    .hero-bannar{
+      padding: 6rem 0;
+    }
+    .pagination-container{
+      margin: 2rem 0;
+    }
+  }
+  
+  @media screen and (max-width : 480px) {
+    h2{
+      font-size: 2rem;
+    }
+  }

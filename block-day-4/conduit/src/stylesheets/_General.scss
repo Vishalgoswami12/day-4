@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: "Poppins", sans-serif;
+    // transition: all .1s ease-in-out;
+  }
+  
+  // all the color palletes used in this whole project
+  $primary: #5cb85c;
+  // $primary : #138666;
+  // $primary : #1ABC9C;
+  $secondary: #f3f3f3;
+  $light-dark: rgba(0, 0, 0, 0.3);
+  $light-gray: #aaa;
+  $dark-gray: #818a91;
+  $white: #fff;
+  $shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  //all the font family used in this project
+  $poppins: "Poppins", sans-serif;
+  $titillium: "Titillium Web", sans-serif;
+  $sanspro: "Source Sans Pro", sans-serif;
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    padding: 0 11%;
+  }
+  
+  body {
+    font-family: $sanspro;
+    font-size: 1.6rem;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow:   0 0 .4rem #719ECE;
+  }
+  
+  textarea:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow:   0 0 .4rem #719ECE;
+  }
+  //  all the common used classes in this whole project
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-row-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .error{
+    color: rgb(195, 13, 13);
+  }
+  .text-center {
+    text-align: center;
+  }
+  
+  // All heading sizes
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.8rem;
+  }
+  
+  // other common stylign here 
+  .section-heading{
+    margin: 1rem 0;
+    font-size: 3.2rem;
+    font-family: $titillium;
+  }
+  
+  .activepage{
+    background-color: $primary;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .btn:hover{
+    background-color: #1b9b1b;
+    color: #fff;
+  }
+  .secondary-btn:hover{
+    background-color: #1b9b1b;
+    color: #fff;
+  }
+  
+  // made responsive this page 
+  @media  screen and (max-width: 992px) {
+    html{
+      font-size: 60%;
+    }
+    section {
+      padding: 0  5%;
+    } 
+  }
+  
+  // below 768px
+  @media  screen and (max-width: 768px) {
+    html{
+      font-size: 50%;
+    }
+    section {
+      padding: 0  2%;
+    } 
+  }
